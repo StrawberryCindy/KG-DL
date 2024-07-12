@@ -23,7 +23,7 @@ def main():
     parser.add_argument('--model', default='CAGED', help='model name')
     parser.add_argument('--seed', default=0, type=int, help='random seed')
     parser.add_argument('--mode', default='test', choices=['train', 'test'], help='run training or evaluation')
-    parser.add_argument('-ds', '--dataset', default='WN18RR', help='dataset')
+    parser.add_argument('-ds', '--dataset', default='wn18rr', help='dataset')
     args, _ = parser.parse_known_args()
     parser.add_argument('--save_dir', default=f'./checkpoints/{args.dataset}/', help='model output directory')
     parser.add_argument('--save_model', dest='save_model', action='store_true')
